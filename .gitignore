@@ -1,0 +1,7 @@
+/backend/node_modules
+/registrationpage/node_modules
+/registrationpage/package.json
+/registrationpage/package-lock.json
+/backend/package.json
+/backend/package-lock.json
+/backend/.env

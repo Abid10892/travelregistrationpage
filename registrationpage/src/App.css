@@ -1,0 +1,261 @@
+.App {
+  height: 96vh;
+  width: 96vw;
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+
+.imageSection {
+  width: 50%;
+  height: 642px;
+  background-image: url('./image/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 20px;
+}
+
+.logoContainer{
+  width: 50px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 35px;
+}
+
+.textContent {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 380px;
+  width: 49%;
+  background-color: rgba(71,68,89, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.textContent h1 {
+  font-size: 60px;
+  color: white;
+  margin-top: 70px;
+  opacity: 1;
+}
+
+.textContent .line {
+  width: 80px;
+  height: 3px;
+  background-color: white;
+  margin-top: -25px;
+}
+
+.textContent p {
+  font-size: 16px;
+  padding: 0 55px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+
+section {
+  width: 50%;
+  height: 100%;
+}
+
+.login {
+  margin-top: 130px;
+}
+.box {
+  background-color: white;
+  width: 95%;
+  padding: 30px;
+  padding-top: 90px;
+}
+.nameRow {
+  width: 94.5%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  
+  gap: 25px;
+  margin-top: 40px;
+}
+.nameRow div{
+  width: 50%;
+}
+.name {
+  width: 90%;
+}
+
+.header {
+  text-align: start;
+  padding-left: 20px;
+  line-height: 7px;
+}
+
+
+input {
+  width: 90%;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1.3px solid #d3d1d1;
+  line-height: 28px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-color: white;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+input::placeholder{
+  color: #8a8989;
+}
+
+input:focus {
+  outline: 5px solid transparent;
+    outline-offset: 2px;
+    border-bottom-color: rgba(63,39,215,255);
+}
+
+.submitBtn {
+  width: 94%;
+  background-color: rgba(63,39,215,255);
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.submitBtn:disabled {
+  background-color: gray;
+  cursor: auto;
+}
+
+.signInBtn{
+  border: 2px solid rgba(96,75,222,255);
+  background-color: white;
+  color: rgba(96,75,222,255);
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 5px 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 10px;
+}
+
+button:hover {
+  background-color: blue;
+  color: aliceblue;
+}
+
+h1, h5 {
+  color: rgba(87,49,220,255);
+  
+}
+h1 {
+  font-size: 33px;
+}
+h5{
+  font-size: 13px;
+}
+
+.error {
+  color: red;
+  margin-top: -25px;
+  text-align: left;
+  margin-left: 9px;
+  font-weight: 300;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .textContent{
+    height: 100vh;
+  }
+  h5{
+    line-height: 15px;
+  }
+  h1{
+    line-height: 34px;
+  }
+  section {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-height: 250px) {
+  .textContent{
+    height: 100vh;
+  }
+  section {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .textContent{
+    text-align: center;
+  }
+
+  .textContent h1{
+    line-height: 55px;
+  }
+
+  .textContent p {
+    line-height: 20px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .App{
+    flex-direction: column;
+    padding-left: 0;
+    width: 100vw;
+  }
+  .textContent{
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  .imageSection{
+    width: 100%;
+    padding-left: 0;
+  }
+  section {
+    width: 97%;
+  }
+  .box {
+    padding-top: 0;
+    width: auto;
+  }
+  .login{
+    margin-top: 70px;
+  }
+  section {
+    overflow: visible;
+  }
+  .textContent h1{
+    font-size: 46px;
+  }
+  .textContent p {
+    font-size: 14px;
+  }
+}
